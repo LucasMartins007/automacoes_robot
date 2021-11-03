@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.8.2 on linux)" generated="20210925 09:52:45.820" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="/home/operador/PycharmProjects/python_test/Tests">
+<suite id="s1-s1" name="Arktus" source="/home/operador/PycharmProjects/python_test/Tests/Arktus">
+<suite id="s1-s1-s1" name="FunctionalTestSuite" source="/home/operador/PycharmProjects/python_test/Tests/Arktus/FunctionalTestSuite">
+<suite id="s1-s1-s1-s1" name="Cadastro" source="/home/operador/PycharmProjects/python_test/Tests/Arktus/FunctionalTestSuite/Cadastro.robot">
+<test id="s1-s1-s1-s1-t1" name="caso de teste 01: Cadastro de Usuario">
+<kw name="Ir para a página de cadastro" library="CadastroResources" type="SETUP">
+<doc>Abre uma página do chrome na página de cadastro</doc>
+<kw name="Abrir navegador chrome" library="CommonFuncionality">
+<doc>Abre uma página do chrome na página de login</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${CHROME}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210925 09:52:46.092" level="INFO">Opening browser 'Chrome' to base url 'https://next.arktus.com.br'.</msg>
+<status status="PASS" starttime="20210925 09:52:46.091" endtime="20210925 09:52:48.012"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210925 09:52:49.013" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210925 09:52:48.012" endtime="20210925 09:52:49.013"/>
+</kw>
+<status status="PASS" starttime="20210925 09:52:46.091" endtime="20210925 09:52:49.014"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${CADASTRO URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20210925 09:52:49.018" level="FAIL">Variable '${CADASTRO URL}' not found.</msg>
+<status status="FAIL" starttime="20210925 09:52:49.014" endtime="20210925 09:52:49.018"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210925 09:52:49.019" endtime="20210925 09:52:49.019"/>
+</kw>
+<kw name="Pagina de cadastro deve estar aberta" library="CadastroResources">
+<doc>Verifica o título da página de cadastro</doc>
+<status status="NOT RUN" starttime="20210925 09:52:49.019" endtime="20210925 09:52:49.020"/>
+</kw>
+<status status="FAIL" starttime="20210925 09:52:46.091" endtime="20210925 09:52:49.020"/>
+</kw>
+<doc>Fazer um cadastro de usuário</doc>
+<tag>Cadastro</tag>
+<status status="FAIL" starttime="20210925 09:52:46.090" endtime="20210925 09:52:49.021">Setup failed:
+Variable '${CADASTRO URL}' not found.</status>
+</test>
+<test id="s1-s1-s1-s1-t2" name="caso de teste 02: Cadastro de Usuario Sem documentos">
+<kw name="Ir para a página de cadastro" library="CadastroResources" type="SETUP">
+<doc>Abre uma página do chrome na página de cadastro</doc>
+<kw name="Abrir navegador chrome" library="CommonFuncionality">
+<doc>Abre uma página do chrome na página de login</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${CHROME}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210925 09:52:49.030" level="INFO">Opening browser 'Chrome' to base url 'https://next.arktus.com.br'.</msg>
+<status status="PASS" starttime="20210925 09:52:49.028" endtime="20210925 09:52:51.014"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210925 09:52:52.015" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210925 09:52:51.014" endtime="20210925 09:52:52.016"/>
+</kw>
+<status status="PASS" starttime="20210925 09:52:49.027" endtime="20210925 09:52:52.016"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${CADASTRO URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20210925 09:52:52.020" level="FAIL">Variable '${CADASTRO URL}' not found.</msg>
+<status status="FAIL" starttime="20210925 09:52:52.017" endtime="20210925 09:52:52.021"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210925 09:52:52.021" endtime="20210925 09:52:52.021"/>
+</kw>
+<kw name="Pagina de cadastro deve estar aberta" library="CadastroResources">
+<doc>Verifica o título da página de cadastro</doc>
+<status status="NOT RUN" starttime="20210925 09:52:52.022" endtime="20210925 09:52:52.022"/>
+</kw>
+<status status="FAIL" starttime="20210925 09:52:49.026" endtime="20210925 09:52:52.023"/>
+</kw>
+<doc>Fazer um cadastro de um usuário sem documentos</doc>
+<tag>Cadastro</tag>
+<status status="FAIL" starttime="20210925 09:52:49.023" endtime="20210925 09:52:52.023">Setup failed:
+Variable '${CADASTRO URL}' not found.</status>
+</test>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210925 09:52:52.027" endtime="20210925 09:52:52.160"/>
+</kw>
+<doc>Teste de diferentes casos de cadastro equivocados</doc>
+<status status="FAIL" starttime="20210925 09:52:45.841" endtime="20210925 09:52:52.161"/>
+</suite>
+<suite id="s1-s1-s1-s2" name="Login" source="/home/operador/PycharmProjects/python_test/Tests/Arktus/FunctionalTestSuite/Login.robot">
+<test id="s1-s1-s1-s2-t1" name="caso de teste 01 : Login válido">
+<kw name="Ir para Pagina de Login" library="LoginResources" type="SETUP">
+<doc>Abre uma página do chrome na página de login</doc>
+<kw name="Abrir navegador chrome" library="CommonFuncionality">
+<doc>Abre uma página do chrome na página de login</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${CHROME}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210925 09:52:52.179" level="INFO">Opening browser 'Chrome' to base url 'https://next.arktus.com.br'.</msg>
+<status status="PASS" starttime="20210925 09:52:52.178" endtime="20210925 09:52:54.027"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210925 09:52:55.028" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210925 09:52:54.027" endtime="20210925 09:52:55.028"/>
+</kw>
+<status status="PASS" starttime="20210925 09:52:52.178" endtime="20210925 09:52:55.029"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20210925 09:52:55.030" level="INFO">Opening url 'https://next.arktus.com.br/cliente/login'</msg>
+<status status="PASS" starttime="20210925 09:52:55.029" endtime="20210925 09:52:55.211"/>
+</kw>
+<kw name="Pagina de login deve estar aberta" library="LoginResources">
+<doc>Verifica o título da página de login</doc>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Arktus | Login</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20210925 09:52:55.215" level="INFO">Page title is 'Arktus | Login'.</msg>
+<status status="PASS" starttime="20210925 09:52:55.212" endtime="20210925 09:52:55.215"/>
+</kw>
+<status status="PASS" starttime="20210925 09:52:55.211" endtime="20210925 09:52:55.215"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210925 09:52:58.216" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210925 09:52:55.215" endtime="20210925 09:52:58.216"/>
+</kw>
+<status status="PASS" starttime="20210925 09:52:52.177" endtime="20210925 09:52:58.217"/>
+</kw>
+<kw name="Preencher campo email" library="LoginResources">
+<doc>Preenche o campo email com um email válido</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=${CAMPO EMAIL}</arg>
+<arg>${VALID EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210925 09:52:58.222" level="INFO">Typing text 'lucasteste@teste.com' into text field 'name=login'.</msg>
+<status status="PASS" starttime="20210925 09:52:58.219" endtime="20210925 09:52:58.425"/>
+</kw>
+<status status="PASS" starttime="20210925 09:52:58.218" endtime="20210925 09:52:58.425"/>
+</kw>
+<kw name="Preencher campo senha" library="LoginResources">
+<doc>Preenche o campo senha com uma senha válida</doc>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>name=${CAMPO SENHA}</arg>
+<arg>${VALID SENHA}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20210925 09:52:58.426" level="INFO">Typing password into text field 'name=password'.</msg>
+<msg timestamp="20210925 09:52:58.457" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20210925 09:52:58.493" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20210925 09:52:58.426" endtime="20210925 09:52:58.493"/>
+</kw>
+<status status="PASS" starttime="20210925 09:52:58.425" endtime="20210925 09:52:58.493"/>
+</kw>
+<kw name="Clicar no botao entrar" library="LoginResources">
+<doc>Clica no botão de entrar</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>name=${BOTAO ENTRAR}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210925 09:52:58.494" level="INFO">Clicking button 'name=Entrar'.</msg>
+<status status="PASS" starttime="20210925 09:52:58.494" endtime="20210925 09:52:58.577"/>
+</kw>
+<status status="PASS" starttime="20210925 09:52:58.494" endtime="20210925 09:52:58.577"/>
+</kw>
+<kw name="Validar login valido" library="LoginResources">
+<doc>Valida se após o login com sucesso, o link 'entre' continua na tela</doc>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210925 09:52:59.578" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210925 09:52:58.577" endtime="20210925 09:52:59.578"/>
+</kw>
+<kw name="Page Should Not Contain Link" library="SeleniumLibrary">
+<arg>title=${LINK ENTRE}</arg>
+<doc>Verifies link identified by ``locator`` is not found from current page.</doc>
+<msg timestamp="20210925 09:52:59.605" level="INFO">Current page does not contain link 'title=Entre'.</msg>
+<status status="PASS" starttime="20210925 09:52:59.579" endtime="20210925 09:52:59.605"/>
+</kw>
+<status status="PASS" starttime="20210925 09:52:58.577" endtime="20210925 09:52:59.605"/>
+</kw>
+<doc>Fazer o Login com um usuario válido</doc>
+<tag>Login</tag>
+<status status="PASS" starttime="20210925 09:52:52.176" endtime="20210925 09:52:59.605"/>
+</test>
+<test id="s1-s1-s1-s2-t2" name="caso de teste 02: Login Inválido">
+<kw name="Ir para Pagina de Login" library="LoginResources" type="SETUP">
+<doc>Abre uma página do chrome na página de login</doc>
+<kw name="Abrir navegador chrome" library="CommonFuncionality">
+<doc>Abre uma página do chrome na página de login</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${CHROME}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210925 09:52:59.608" level="INFO">Opening browser 'Chrome' to base url 'https://next.arktus.com.br'.</msg>
+<status status="PASS" starttime="20210925 09:52:59.607" endtime="20210925 09:53:01.431"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210925 09:53:02.432" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210925 09:53:01.431" endtime="20210925 09:53:02.433"/>
+</kw>
+<status status="PASS" starttime="20210925 09:52:59.607" endtime="20210925 09:53:02.433"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20210925 09:53:02.435" level="INFO">Opening url 'https://next.arktus.com.br/cliente/login'</msg>
+<status status="PASS" starttime="20210925 09:53:02.434" endtime="20210925 09:53:02.618"/>
+</kw>
+<kw name="Pagina de login deve estar aberta" library="LoginResources">
+<doc>Verifica o título da página de login</doc>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Arktus | Login</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20210925 09:53:02.621" level="INFO">Page title is 'Arktus | Login'.</msg>
+<status status="PASS" starttime="20210925 09:53:02.618" endtime="20210925 09:53:02.621"/>
+</kw>
+<status status="PASS" starttime="20210925 09:53:02.618" endtime="20210925 09:53:02.621"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210925 09:53:05.622" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210925 09:53:02.621" endtime="20210925 09:53:05.622"/>
+</kw>
+<status status="PASS" starttime="20210925 09:52:59.606" endtime="20210925 09:53:05.622"/>
+</kw>
+<kw name="Preencher campo email invalido" library="LoginResources">
+<doc>Preenche o campo email com um email inválido</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=${CAMPO EMAIL}</arg>
+<arg>${INVALID EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210925 09:53:05.623" level="INFO">Typing text 'emailInvalido@emailInvalido.com' into text field 'name=login'.</msg>
+<status status="PASS" starttime="20210925 09:53:05.623" endtime="20210925 09:53:05.754"/>
+</kw>
+<status status="PASS" starttime="20210925 09:53:05.622" endtime="20210925 09:53:05.754"/>
+</kw>
+<kw name="Preencher campo senha invalido" library="LoginResources">
+<doc>Preenche o campo senha com uma senha inválida</doc>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>name=${CAMPO SENHA}</arg>
+<arg>${INVALID SENHA}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20210925 09:53:05.755" level="INFO">Typing password into text field 'name=password'.</msg>
+<msg timestamp="20210925 09:53:05.791" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20210925 09:53:05.829" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20210925 09:53:05.755" endtime="20210925 09:53:05.829"/>
+</kw>
+<status status="PASS" starttime="20210925 09:53:05.754" endtime="20210925 09:53:05.830"/>
+</kw>
+<kw name="Clicar no botao entrar" library="LoginResources">
+<doc>Clica no botão de entrar</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>name=${BOTAO ENTRAR}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210925 09:53:05.831" level="INFO">Clicking button 'name=Entrar'.</msg>
+<status status="PASS" starttime="20210925 09:53:05.830" endtime="20210925 09:53:05.911"/>
+</kw>
+<status status="PASS" starttime="20210925 09:53:05.830" endtime="20210925 09:53:05.912"/>
+</kw>
+<kw name="Validar login inválido" library="LoginResources">
+<doc>Valida se o alerta de erro com a mensagem esperada apareceu</doc>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210925 09:53:06.913" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210925 09:53:05.912" endtime="20210925 09:53:06.913"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>class=${ALERTA DE ERRO}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20210925 09:53:06.927" level="INFO">Current page contains element 'class=MuiAlert-message'.</msg>
+<status status="PASS" starttime="20210925 09:53:06.914" endtime="20210925 09:53:06.927"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>class=${ALERTA DE ERRO}</arg>
+<arg>${MENSAGEM DE ERRO}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210925 09:53:06.942" level="INFO">Element 'class=MuiAlert-message' contains text 'Usuário não localizado. Verifique seu login e senha.'.</msg>
+<status status="PASS" starttime="20210925 09:53:06.927" endtime="20210925 09:53:06.942"/>
+</kw>
+<status status="PASS" starttime="20210925 09:53:05.912" endtime="20210925 09:53:06.942"/>
+</kw>
+<doc>Fazer um login inválido, esperando uma mensagem de erro</doc>
+<tag>Login</tag>
+<status status="PASS" starttime="20210925 09:52:59.606" endtime="20210925 09:53:06.942"/>
+</test>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210925 09:53:06.943" endtime="20210925 09:53:07.096"/>
+</kw>
+<doc>Processo de Login</doc>
+<status status="PASS" starttime="20210925 09:52:52.164" endtime="20210925 09:53:07.096"/>
+</suite>
+<suite id="s1-s1-s1-s3" name="Pedido" source="/home/operador/PycharmProjects/python_test/Tests/Arktus/FunctionalTestSuite/Pedido.robot">
+<kw name="Abrir navegador chrome" library="CommonFuncionality" type="SETUP">
+<doc>Abre uma página do chrome na página de login</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${CHROME}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210925 09:53:07.109" level="INFO">Opening browser 'Chrome' to base url 'https://next.arktus.com.br'.</msg>
+<status status="PASS" starttime="20210925 09:53:07.108" endtime="20210925 09:53:08.911"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210925 09:53:09.912" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210925 09:53:08.911" endtime="20210925 09:53:09.912"/>
+</kw>
+<status status="PASS" starttime="20210925 09:53:07.108" endtime="20210925 09:53:09.913"/>
+</kw>
+<test id="s1-s1-s1-s3-t1" name="Caso de teste 01: Procurar um produto">
+<kw name="Procurar produto por nome" library="PedidoResource">
+<kw name="Buscar Produto teste" library="HeaderPadrao" sourcename="Buscar produto ${PRODUTO}">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${CAMPO BUSCAR}</arg>
+<arg>${PRODUTO}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20210925 09:53:09.919" level="INFO">Sending key(s) ('teste',) to id=input-search-header element.</msg>
+<msg timestamp="20210925 09:53:10.221" level="INFO">Sending keys teste</msg>
+<status status="PASS" starttime="20210925 09:53:09.918" endtime="20210925 09:53:10.264"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LUPA BUSCAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210925 09:53:10.265" level="INFO">Clicking element 'xpath=//*[@id="__next"]/header/div[2]/div/div[2]/form/div/div/div/button'.</msg>
+<status status="PASS" starttime="20210925 09:53:10.264" endtime="20210925 09:53:10.787"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210925 09:53:13.788" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210925 09:53:10.787" endtime="20210925 09:53:13.788"/>
+</kw>
+<kw name="Limpar campo ${CAMPO BUSCAR}" library="CommonFuncionality" sourcename="Limpar campo ${INPUT}">
+<kw name="Clear Element Text ${INPUT}">
+<msg timestamp="20210925 09:53:13.804" level="FAIL">No keyword with name 'Clear Element Text ${INPUT}' found.</msg>
+<status status="FAIL" starttime="20210925 09:53:13.803" endtime="20210925 09:53:13.804"/>
+</kw>
+<status status="FAIL" starttime="20210925 09:53:13.788" endtime="20210925 09:53:13.804"/>
+</kw>
+<status status="FAIL" starttime="20210925 09:53:09.917" endtime="20210925 09:53:13.805"/>
+</kw>
+<status status="FAIL" starttime="20210925 09:53:09.916" endtime="20210925 09:53:13.806"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210925 09:53:13.806" endtime="20210925 09:53:13.806"/>
+</kw>
+<kw name="Produrar produto por codigo" library="PedidoResource">
+<status status="NOT RUN" starttime="20210925 09:53:13.807" endtime="20210925 09:53:13.807"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210925 09:53:13.807" endtime="20210925 09:53:13.807"/>
+</kw>
+<kw name="Produrar produto por marca" library="PedidoResource">
+<status status="NOT RUN" starttime="20210925 09:53:13.808" endtime="20210925 09:53:13.808"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210925 09:53:13.808" endtime="20210925 09:53:13.808"/>
+</kw>
+<doc>Faz a busca de um produto por nome</doc>
+<tag>Busca</tag>
+<status status="FAIL" starttime="20210925 09:53:09.914" endtime="20210925 09:53:13.809">No keyword with name 'Clear Element Text ${INPUT}' found.</status>
+</test>
+<test id="s1-s1-s1-s3-t2" name="Caso de teste 02:">
+<status status="FAIL" starttime="20210925 09:53:13.811" endtime="20210925 09:53:13.812">Test case contains no keywords.</status>
+</test>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210925 09:53:13.814" endtime="20210925 09:53:13.878"/>
+</kw>
+<doc>Teste de possíveis erros no processo de fazer um pedido no site</doc>
+<status status="FAIL" starttime="20210925 09:53:07.099" endtime="20210925 09:53:13.878"/>
+</suite>
+<status status="FAIL" starttime="20210925 09:52:45.839" endtime="20210925 09:53:13.880"/>
+</suite>
+<status status="FAIL" starttime="20210925 09:52:45.838" endtime="20210925 09:53:13.882"/>
+</suite>
+<status status="FAIL" starttime="20210925 09:52:45.820" endtime="20210925 09:53:13.884"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Busca</stat>
+<stat pass="0" fail="2" skip="0">Cadastro</stat>
+<stat pass="2" fail="0" skip="0">Login</stat>
+</tag>
+<suite>
+<stat pass="2" fail="4" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="2" fail="4" skip="0" id="s1-s1" name="Arktus">Tests.Arktus</stat>
+<stat pass="2" fail="4" skip="0" id="s1-s1-s1" name="FunctionalTestSuite">Tests.Arktus.FunctionalTestSuite</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1-s1-s1" name="Cadastro">Tests.Arktus.FunctionalTestSuite.Cadastro</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1-s1-s2" name="Login">Tests.Arktus.FunctionalTestSuite.Login</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1-s1-s3" name="Pedido">Tests.Arktus.FunctionalTestSuite.Pedido</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210925 09:52:45.958" level="ERROR">Error in file '/home/operador/PycharmProjects/python_test/Resources/Arktus/CadastroResources.robot' on line 5: Error in file '/home/operador/PycharmProjects/python_test/Resources/Arktus/CadastroVariables.robot' on line 46: Resource file with 'Test Cases' section is invalid.</msg>
+</errors>
+</robot>
